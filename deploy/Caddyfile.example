@@ -1,0 +1,10 @@
+vokabeln.example.de {
+    encode zstd gzip
+
+    # Für eine öffentlich erreichbare Einzelbenutzer-App empfohlen:
+    # basic_auth {
+    #     deinname DEIN_MIT_CADDY_HASH_PASSWORD_ERZEUGTER_HASH
+    # }
+
+    reverse_proxy 127.0.0.1:8090
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=Velox Latein-Vokabeltrainer
+After=network.target
+
+[Service]
+Type=simple
+User=velox
+Group=velox
+WorkingDirectory=/opt/velox
+EnvironmentFile=-/opt/velox/.env
+ExecStart=/opt/velox/.venv/bin/gunicorn --workers 2 --threads 4 --bind 127.0.0.1:8090 --access-logfile - --error-logfile - app:app
+Restart=on-failure
+RestartSec=3
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/opt/velox/data
+
+[Install]
+WantedBy=multi-user.target

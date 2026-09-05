@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Velox · Zugang</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body class="access-page">
+  <main class="access-card panel">
+    <span class="brand-mark">V</span>
+    <span class="eyebrow">Velox</span>
+    <h1>Zugang</h1>
+    <p>Gib deinen Admin- oder Lerncode ein.</p>
+    {% if error %}<div class="access-error">{{ error }}</div>{% endif %}
+    <form method="post" autocomplete="off">
+      <label>Zugangscode<input name="access_code" type="password" autofocus required></label>
+      <button class="primary-button" type="submit">Öffnen</button>
+    </form>
+  </main>
+</body>
+</html>

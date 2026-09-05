@@ -1,0 +1,489 @@
+fremdsprache,deutsch,deklination,lektion,richtig,falsch
+ubi,wo als,,1,12,11
+videre,sehen,,1,12,6
+saepe,oft,,1,10,9
+amicus,der ein Freund,,1,9,7
+ad,zu nach,b Akk Richtung,1,2,15
+cena,das ein Abendessen,,1,7,10
+invitare,einladen,,1,9,8
+hodie,heute,,1,9,8
+exspectare,erwarten,,1,9,7
+iam,schon,,1,9,8
+cunctus,ganz ,,1,2,8
+parare,vorbereiten,,1,8,1
+paratus,vorbereitet,,1,7,2
+est,er sie es ist,,1,9,1
+vinum,der Wein,,1,1,10
+familia,die Familie,,1,2,7
+dominus,der ein HausHerr ,,1,1,8
+et,und auch,,1,3,8
+diu,lange,,1,8,1
+dicere,sagen sprechen,,1,4,5
+quis quid,wer was,,1,8,2
+sed,aber sondern,,1,3,7
+non,nicht,,1,8,1
+venire,kommen,,1,9,1
+tu,du ,,1,2,9
+neque neque,weder noch,,1,5,4
+habere,haben halten,,1,9,2
+ut,wie als,,1,6,3
+semper,immer,,1,8,2
+facere,tun machen,,1,5,4
+apud,bei,b Akk Richtung,1,8,2
+alius,ein anderer,,1,7,2
+cenare,zu Abend essen,,1,8,2
+vos,ihr ,,1,1,8
+nos,wir ,,1,1,8
+dum,während solange,,1,1,10
+ego,ich ,,1,2,8
+si,wenn falls,,1,7,3
+aut,oder,,1,8,1
+aut aut,entweder oder,,1,10,1
+debere,müssen schulden verdanken,,1,6,4
+etiam,auch,,2,13,0
+multi,viele,ae a,2,9,1
+nam,denn,,2,10,1
+cum,mit,Abl d Begleitung,2,13,15
+cum,wenn als nachdem weil obwohl,als Nebensatzeinleitung,2,4,15
+hora,die Stunde,,2,10,0
+in,in etw hinein wohin nach gegen zu,b Akk d Richtung,2,5,11
+in,in etw wo an auf bei,b Abl d Ortes,2,5,11
+petere,anpeilen aufsuchen sich begeben verlangen bitten angreifen,,2,6,10
+servus,der Sklave,,2,9,1
+audire,hören,,2,9,0
+ad esse,da sein helfen,mit Dativ,2,6,2
+meus,mein,a um,2,7,1
+tuus,dein,a um,2,5,2
+laborare,sich bemühen arbeiten in Schwierigkeiten sein leiden,,2,4,13
+metuere,fürchten,,2,6,1
+sine,ohne,b Abl d Trennung,2,6,1
+cura,die Sorge,,2,6,0
+agere,treiben tun handeln verhandeln,,2,1,7
+putare,glauben meinen für etwas halten,,2,2,8
+de,herab von weg über,b Abl d Trennung,2,1,10
+vita,das Leben,,2,6,0
+puer,der Junge,,2,6,1
+liberi,die Kinder,,2,6,0
+ludere,spielen,,2,6,0
+fortuna,das Schicksal das Glück,,2,3,5
+malus,schlecht,a um,2,6,0
+bonus,gut,a um,2,6,0
+capere,packen erobern nehmen erhalten,,2,1,7
+gladius,Schwert,,2,1,5
+occidere,töten,,2,3,3
+periculum,die Gefahr,,2,6,0
+solum,nur,,2,6,0
+a ab,von,b Abl d Trennung,2,0,13
+itaque,deshalb,,2,6,0
+verus,wahr,a um,2,5,1
+vera,etwas Wahres die Wahrheit,n Pl,2,6,0
+undique,von allen Seiten von überall her,,3,6,17
+varius,verschieden bunt vielfältig,a um,3,15,5
+vir,der Mann,i m.,3,15,0
+femina,die Frau,ae f.,3,14,1
+se,sich,,3,7,12
+exercere,üben trainieren,,3,14,0
+magnus,groß,a um,3,13,1
+aqua,das Wasser,ae f.,3,17,0
+salire,springen,,3,16,2
+numquam,nie,,3,17,0
+tacere,schweigen,,3,15,15
+clamare,rufen,,3,20,8
+cogere,zusammentreiben versammeln zwingen,,3,8,23
+optimus,der Beste sehr gut,a um,3,17,9
+emere,kaufen,,3,21,4
+tibi,dir,,3,21,1
+duo,zwei,duae duo,3,21,0
+dare,geben,,3,13,5
+filius,der Sohn,i m.,3,14,0
+filia,die Tochter,ae f.,3,14,0
+pulcher,schön,ra rum,3,9,8
+subito,plötzlich,,3,15,1
+toga,die Toga,ae f.,3,13,0
+tenere,halten haben,,3,9,8
+animus,der Geist der Sinn die Gesinnung das Herz der Mut,i m.,3,4,17
+studium,der Eifer das Interesse die Beschäftigung,i n.,3,1,10
+philosophus,der Philosoph,i m.,3,10,0
+silentium,die Stille das Schweigen,i n.,3,7,4
+necessarius,notwendig nahestehend verwandt,a um,3,0,14
+Romanus,romisch Subst der Romer,a um,3,0,13
+placere,gefallen,,3,2,8
+homo,der Mensch der Mann,hominis m.,4,23,3
+humanus,menschlich gebildet,a um,4,19,6
+senex,der alte Mann,senis m.,4,20,5
+iuvenis,der junge Mann die junge Frau jung,iuvenis m f.,4,15,10
+spectare,betrachten anschauen,,4,21,3
+oculus,das Auge,i m.,4,20,3
+ingens,riesig,ingentis,4,15,9
+vox,die Stimme,vocis f.,4,22,1
+populus,das Volk,i m.,4,23,0
+cur,warum,,4,21,3
+currere,laufen eilen,,4,15,10
+ferrum,das Eisen die Waffe das Schwert,i n.,4,19,6
+vulnus,die Wunde,vulneris n.,4,21,4
+fugere,fliehen vor,mit Akk.,4,14,11
+occidere,sterben,,4,20,4
+mors,der Tod,mortis f.,4,12,6
+mortuus,tot,,4,14,4
+timere,fürchten,,4,8,10
+pugna,der Kampf die Schlacht,ae f.,4,11,7
+acer,scharf heftig,acris acre,4,12,6
+unus,ein einziger allein,,4,6,10
+cadere,fallen,,4,5,11
+non iam,nicht mehr,,4,12,3
+movere,bewegen beeindrucken,,4,10,6
+nomen,der Name,nominis n.,4,12,4
+victor,der Sieger,victoris m.,4,11,1
+caedes,der Mord das Blutbad,caedis f.,4,3,11
+tegere,bedecken schützen,,4,1,13
+posse,können,,4,4,9
+pellere,stoßen schlagen vertreiben,,4,1,12
+repellere,zurückstoßen,,4,7,1
+totus,ganz,a um,4,4,5
+corpus,der Körper,corporis n.,4,8,0
+ars,das Können die Geschicklichkeit die Kunst,artis f.,4,0,9
+omnis,jeder ganz,is e,4,0,9
+omnes,alle,,4,2,6
+mora,der Aufschub die Verzögerung,ae f.,4,0,8
+barbarus,auslandisch unzivilisiert Subst die Barbaren Nicht Romer,a um,5,0,29
+consilium,die Versammlung der Rat die Beratung der Plan der Beschluss,i n.,5,3,23
+cognoscere cognosco cognovi cognitum,kennenlernen erkennen,cognosco cognovi cognitum,5,19,7
+prae,vor,Präp b Abl,5,21,5
+mittere mitto misi mmissum,schicken,mitto misi missum,5,21,5
+relinquus,ubrig,a um,5,12,15
+copia,die Menge der Vorrat die Moglichkeit Pl die Truppen,ae f.,5,0,26
+noster,unser Subst der Unsrige,tra trum,5,0,26
+e ex,aus heraus von etw her,b Abl d Trennung,5,5,21
+navis,das Schiff,navis f.,5,18,8
+miles,der Soldat,Militis m.,5,11,9
+gravis,schwer gewichtig ernst,is e,5,9,10
+arma,die Waffen,armorum n Pl.,5,14,5
+fluctus,die Welle,us m.,5,15,3
+hostis,der Feind,is m.,5,13,5
+pugnare,kampfen,,5,6,12
+telum,der Wurfspeß,i n.,5,0,18
+equus,das Pferd,i m.,5,12,6
+incitare,antreiben erregen,,5,9,9
+terere,erschrecken,,5,6,12
+latus,die Seite die Flanke,lateris n.,5,8,11
+aperire aperio aperui apertum,offnen aufdecken,aperio aperui apertum,5,0,19
+iubere iubeo iussi iussum,befehlen,iubeo iussi iussum,5,5,13
+atque ac,und,,5,10,9
+usus,der Gebrauch der Nutzen die Erfahrung,us m.,5,0,18
+dubitare,zögern bezweifeln,,5,0,4
+mare,das Meer,maris n.,5,1,2
+ferre fero tuli latum,tragen ertragen berichten,fero tuli latum,5,0,3
+deus,der Gott,i m. Nom Pl meist di Dat Abl Pl dis,5,1,2
+vocare,rufen nennen,,5,0,3
+nobis,uns,Dat Abl,5,0,1
+auxilium,die Hilfe,i n.,5,0,1
+tum,dann darauf,,5,0,1
+nisi,wenn nicht außer,,5,0,1
+tradere trado tradidi traditum,übergeben überliefern,trado tradidi traditum,5,0,1
+incipere incipio coepi coeptum,anfangen,incipio coepi coeptum,5,0,1
+Kasus,Nominativ Genitiv Dativ Akkusativ Ablativ Nominativ Genitiv Dativ Akkusativ Ablativ,,20,2,9
+maskulin,us i o um o i orum is os is,,20,49,15
+feminin,a ae ae am a ae orum is as is,,20,55,16
+neutrum,um i o um o a orum is a is,,20,25,7
+Kons.Deklination,homo is i em e es um ibus es ibus,,20,16,11
+Kons.deklination neutrum,vulnus is i vulnus e a um ibus a ibus,,20,9,9
+Nom gen Dat Akk Abl,wer/was wessen wem wen/was womit/wodurch,,20,3,6
+servare,retten bewahren,,6,34,13
+conspicere, erblicken spicio spexi spectum,,6,13,33
+iactare,werfen,,6,41,10
+complere,anfüllen erfüllen pleo plevi pletum,,6,13,33
+consistere,sich aufstellen stehen bleiben sisto stiti,,6,0,26
+vincere,besiegen vinco vici victum,,6,0,9
+se re-cipere,sich zurückziehen re-cipio cepi ceptum,,6,0,5
+neque neque,weder noch,,6.1,38,16
+navis,das Schiff navis f,navis f,6.1,35,13
+desilire,herabspringen,,6.1,36,11
+ubi,wo als,,6.1,40,7
+hostis,der Feind is m,is m,6.1,40,8
+equus,das Pferd i m,i m,6.1,34,7
+incitare,erregen antreiben,,6.1,33,9
+dare,geben do dedi datum,do dedi datum,6.1,33,7
+alius,ein anderer,,6.1,42,1
+auxilium,die Hilfe i n,i n,6.1,39,5
+mittere,schicken mitto misi missum,mitto misi missum,6.1,27,5
+capere,packen erobern nehmen erhalten  capio cepi captum,capio cepi captum,6.1,1,30
+tamen,trotzdem,,6.1,31,4
+quod,weil,,6.1,27,6
+ordo,die Reihe die Ordnung ordinis m,ordinis m,6.1,17,15
+servare,retten bewahren,,6.1,29,0
+signum,das Zeichen das Feldzeichen die Statue i n,i n,6.1,16,14
+litus,die Küste der Strand litoris n,litoris n,6.1,27,5
+suus,sein ihr a um,a um,6.1,17,15
+vero,aber,,6.1,20,9
+singulus,einzeln a um,a um,6.1,23,2
+conspicere,erblicken spicio spexi spectum,spici spexi spectum,6.1,18,6
+pauci,wenige ae a,ae a,6.1,16,8
+circum,um etw herum,abl,6.1,22,3
+iactare,werfen,,6.1,22,3
+complere,anfüllen erfüllen pleo plevi pletum,pleo plevi pletum,6.1,18,8
+simulac simulatque,sobald,,6.1,19,4
+consistere,sich aufstellen stehen bleiben sisto stiti,sisto stiti,6.1,20,5
+impetus,der Angriff der Schwung us m,us m,6.1,21,5
+fuga,die Flucht ae f,ae f,6.1,20,4
+eques,der Reiter equitis m,equitis m,6.1,7,3
+cursus,der Kurs us m,us m,6.1,9,2
+insula,die Insel ae f,ae f,6.1,9,1
+que,und,,6.1,9,1
+de-esse,fehlen nicht da sein im Stich lassen de-sum de-fui,de-sum de-fui,6.1,8,2
+proelium,die Schlacht i n,i n,6.1,0,9
+vincere,besiegen vinco vici victum,vinco vici victum,6.1,2,3
+se re-cipere,sich zurück-ziehen re-cipio -cepi -ceptum,re-cipio -cepi -ceptum,6.1,0,5
+statim,auf der Stelle sofort,,6.1,0,4
+legatus,der Gesandte der Offizier,i m,6.1,0,4
+pax,der Frieden pacis f,pacis f,6.1,0,1
+Romanus,der Römer i m,i m,5.1,0,2
+venire,kommen venio veni ventum,venio veni ventum,5.1,2,0
+de,von etw herab von etw weg,,5.1,0,0
+debere,müssen schulden verdanken,,5.1,1,0
+aut aut,entweder oder,,5.1,1,0
+aqua,das Wasser ae f,ae f,5.1,1,0
+studium,der Eifer das Interesse die Beschäftigung i n,i n,5.1,1,1
+posse,können possum potui,possum potui,5.1,0,1
+videre,sehen video vidi visum,video vidi visum,5.1,3,1
+movere,bewegen beeindrucken moveo movi motum,moveo movi motum,5.1,0,0
+esse,sein sum fui,sum fui,5.1,0,1
+cum,wenn als nachdem weil obwohl,,5.1,0,0
+petere,anpeilen aufsuchen sich begeben verlangen erbitten angreifen,,5.1,0,3
+facere,tun machen facio feci factum,facio feci factum,5.1,1,0
+dicere,sagen sprechen dico dixi dictum,dico dixi dictum,5.1,0,3
+barbarus,ausländisch unzivilisiert die Babaren a um,a um,5.1,0,1
+consilium,die Versammlung der Rat die Beratung der Plan der Beschluss der Rat i n,i n,5.1,0,2
+cognoscere,kennenlernen erkennen cognosco cognovi cognitum,cognosco cognovi cognitum,5.1,0,0
+prae,vor,,5.1,3,0
+mittere,schicken mitto misi missum,mitto misi missum,5.1,1,1
+reliquus,übrig a um,a um,5.1,0,0
+copia,die Menge der Vorrat die Möglichkeit die Truppen ae f,ae f,5.1,0,0
+noster,unser unsrige tra trum,tra trum,5.1,0,0
+e ex,aus etw heraus von etw her,,5.1,0,0
+navis,das Schiff navis f,navis f,5.1,0,0
+miles,der Soldat militis m,militis m,5.1,0,0
+gravis,schwer gewichtig ernst is e,is e,5.1,0,0
+arma,die Waffen armorum n PL,armorum n PL,5.1,0,0
+fluctus,die Welle us m,us m,5.1,0,0
+hostis,der Feind hostis m,hostis m,5.1,0,0
+pugnare,kämpfen,,5.1,0,0
+telum,der Wurfspieß i n,i n,5.1,0,0
+equus,das Pferd i m,i m,5.1,0,0
+incitare,erregen antreiben,,5.1,0,0
+terrere,erschrecken,,5.1,0,0
+latus,die Seite die Flanke lateris n,lateris n,5.1,0,0
+aperire,öffnen aufdecken aperio aperui apertum,aperio aperui apertum,5.1,0,0
+iubere,befehlen iubeo iussi iussum,iubeo iussi iussum,5.1,0,0
+atque/ac,und,,5.1,0,0
+usus,der Gebrauch der Nutzen die Erfahrung us m,us m,5.1,0,0
+dubitare,zögern bezweifeln,,5.1,0,0
+mare,das Meer maris n,maris n,5.1,0,0
+ferre,tragen ertragen berichten fero tuli latum,fero tuli latum,5.1,0,0
+deus,der Gott i m,i m,5.1,0,0
+vocare,rufen nennen,,5.1,0,0
+nobis,uns,,5.1,0,0
+auxillium,die Hilfe i n,i n,5.1,0,0
+tum,dann darauf,,5.1,0,0
+nisi,wenn nicht außer,,5.1,0,0
+tradere,übergeben überliefern trado tradidi traditum,trado tradidi traditum,5.1,0,0
+incipere,anfangen incipio coepi coeptum,incipio coepi coeptum,5.1,0,0
+ubi,wo als,,7,70,0
+iubere,befehlen,iubeo iussi iussum,7,59,12
+signum,das zeichen das Feldzeichen die Statue,i n,7,56,15
+nisi,wenn nicht,,7,55,13
+tradere,übergeben überliefern,trado tradidi traditum,7,35,43
+cum,wenn als nachdem weil obwohl,,7,47,10
+populus,das Volk,i m,7,47,6
+iactare,werfen,,7,55,1
+omnes,alle,,7,54,1
+que,und,,7,55,0
+cogere,zusammentreiben versammeln zwingen,cogo coegi coactum,7,29,11
+deus,der Gott,i m,7,31,8
+metuere,fürchten,metuo metui,7,33,7
+occidere,sterben,occido occidi,7,33,5
+oppidum,die Siedlung die Stadt,i n,7,30,12
+auferre,wegtragen rauben,au-fero abs-tuli ab-latum,7,26,23
+respondere,antworten,respondeo spondi responsum,7,35,9
+mihi,mir,,7,35,5
+religio,die religiöse Ehrfurcht,religionis f,7,37,5
+prohibere,abhalten hindern,,7,34,10
+senatus,der Senat,us m,7,32,7
+permittere,erlauben,mitto misi missum,7,23,10
+poena,die Strafe,ae f,7,22,11
+narrare,erzählen,,7,29,3
+vivus,lebend lebendig,a um,7,23,10
+relinquere,zurücklassen verlassen,relinquo reliqui relictum,7,16,26
+negare,"sagen, dass nicht verneinen",,7,30,15
+statua,die Statue,ae f,7,27,4
+sedere,sitzen,sedeo sedi sessum,7,25,8
+praeceps,kopfüber steil,praecipitis,7,25,7
+forum,das Forum der Markt,i n,7,43,13
+nudus,nackt,a um,7,35,7
+constituere,aufstellen festsetzen beschließen,con stituo stui stitutum,7,16,35
+vincire,fesseln binden,vincio vinxi vinctum,7,28,17
+mens,der Sinn der Verstand,mentis f,7,29,21
+necesse est,es ist nötig man muss,,7,28,5
+finis,das Ende die Grenze das Ziel,is m,7,21,27
+iniuria,das Unrecht,ae f,7,20,15
+crudelitas,die Grausamkeit,atis f,7,34,4
+clamor,das Geschrei der Lärm,clamoris m,7,19,16
+promittere,versprechen,pro mitto misi missum,7,19,8
+immortalis,unsterblich,is e,7,25,0
+oportet,es gehört sich,,7,21,18
+ita,so,,7,20,4
+vix,kaum,,7,30,4
+iubere,befehlen,iubeo iussi iussum,7.1,21,5
+signum,das Zeichen das Feldzeichen die Statue,i n,7.1,20,4
+tradere,übergeben überliefern,trado tadidi traditum,7.1,14,11
+populus,das Volk,i m,7.1,18,7
+cogere,zusammentreiben versammeln zwingen,cogo coegi coactum,7.1,21,4
+deus,der Gott,i m,7.1,22,2
+metuere,fürchten,metuo metui,7.1,23,2
+occidere,sterben,occido occidi,7.1,25,1
+oppidum,die Siedlung die Stadt,i n,7.1,16,9
+auferre,wegtragen rauben,au-fero abs-tuli ab-latum,7.1,24,2
+respondere,antworten,respondeo spondi responsum,7.1,17,4
+religio,die Religiöse Ehrfurcht,religionis f,7.1,20,1
+permittere,erlauben,mitto misi missum,7.1,18,3
+senatus,der Senat,us m,7.1,15,9
+poena,die Strafe,ae f,7.1,20,3
+vivus,lebend lebendig,a um,7.1,21,0
+relinquere,zurücklassen verlassen,relinquo reliqui relictum,7.1,11,12
+statua,die Statue,ae f,7.1,17,5
+sedere,sitzen,sedeo sedi sessum,7.1,16,5
+praeceps,kopfüber steil,praecipits,7.1,18,3
+forum,das Forum der Markt,i n,7.1,13,7
+nudus,nackt,i n,7.1,12,7
+constituere,aufstellen festsetzen beschließen,con stituo stui stitutum,7.1,0,19
+vincire,fesseln binden,vincio vinxi vinctum,7.1,13,5
+mens,der Sinn der Verstand,mentis f,7.1,15,4
+finis,das Ende die Grenze das Ziel,is m,7.1,10,10
+iniuria,das Unrecht,ae f,7.1,16,5
+crudelitas,die Grausamkeit,atis f,7.1,13,8
+clamor,das Geschrei der Lärm,clamoris m,7.1,10,9
+promittere,versprechen,pro mitto misi missum,7.1,17,3
+immortalis,unsterblich,is e,7.1,12,4
+erfugere,fliehen vor,fugio fugi,8,44,19
+narrare,erzählen,,8,62,0
+incipere,anfangen,incipio coepi coeptum,8,58,12
+consilium,die Versammlung der Rat die Beratung der Plan der Beschluss,i n,8,53,12
+capere,packen erobern nehmen erhalten,capio cepi captum,8,49,14
+Romanus,römisch der Römer,,8,50,3
+aperire,öffnen aufdecken,aperio aperui apertum,8,36,19
+agere,treiben tun handeln verhandeln,ago egi actum,8,43,25
+homo,der Mensch der Mann,hominis m,8,47,5
+ferre,tragen ertragen berichten,fero tuli latum,8,40,33
+parare,vorbereiten,,8,48,0
+clam,heimlich,,8,37,10
+prope,in der Nähe,,8,41,6
+quasi,gleichsam wie wenn,,8,40,9
+lux,das Licht,lucis f,8,42,4
+liberatas,die Freiheit,atis f,8,42,4
+vivere,leben,vivo vixi,8,37,10
+re-vivere,wieder aufleben,,8,44,3
+iter,der Weg der Marsch die Reise,itineris n,8,43,20
+facinus,die Tat das Verbrechen,facinoris n,8,47,25
+ire,gehen,eo li itum,8,40,23
+in-ire,hineingehen anfangen,,8,34,30
+is ae id,der dieser er,,8,32,8
+trahere,ziehen,traho traxi tractum,8,37,14
+re-trahere,zurückziehen,,8,45,15
+magistratus,der Beamte,us m,8,32,4
+ducere,führen meinen für etw halten,duco duxi ductum,8,33,14
+re-ferre,zurückbringen berichten,refero rettuli relatum,8,32,24
+civis,der Bürger,civis m,8,27,7
+gratia,die Ausstrahlung die Beliebtheit die Symphatie die Gefälligkeit der Dank,ae f,8,4,55
+gratias agere,danken,,8,18,5
+diligentia,die Sorgfalt,ae f,8,19,2
+laudare,loben,,8,20,1
+iratus,zornig,a um,8,15,6
+ardere,brennen glühen,ardeo arsi,8,21,9
+medius,der mittlere,a um,8,6,7
+miser,bedauernswert unglücklich,era erum,8,10,18
+ad-ferre,herbei-loben,affero attuli allatum,8,12,10
+frustra,vergeblich,,8,9,3
+caedere,abschlag,,,0,0
+hlagen,cadeo cecidi caesum,8,0,0,0
+iudex,der Richter,iudicis m,8,12,12
+nullus,kein keiner,a um,8,17,9
+Nominativ Sg,Us a um,,21,123,5
+Genitiv Sg,I ae i is,,21,98,17
+Dativ Sg,O ae o i,,21,91,27
+Akkusativ Sg,Um am um em us,,21,73,13
+Ablativ Sg,o a o e,,21,62,19
+Nominativ Pl,i ae a es a,,21,52,7
+Genitiv Pl,orum arum orum um,,21,37,6
+Dativ Pl,is is is ibus,,21,14,4
+Akkusativ Pl,os as a es a,,21,3,3
+Ablativ Pl,is is is ibus,,21,0,0
+Wie,TATZ Worum geht es? Intention Kernaussage/Hauptargument zusammenfassung Argumentation und Sprache analysieren Einleitung aufgreifen eigene Bewertung Bedeutung,,231,0,17
+Argumentationsarten,Faktenargument(Nachweise) Autoritätsargument(Autoritätsperson) Normatives Argument(Moral),,231,0,3
+Imperfekt,bam bas bat bamus batis bant,,zeiten,17,12
+perfekt,i isti it imus istis erunt,,zeiten,20,10
+plusquamperfekt,eram eras erat eramus eratis erant,,zeiten,14,13
+Nom SG.,is ea id,,is ea id,46,2
+Gen. SG,eius eius eius,,is ea id,40,5
+Dat. SG,ei ei ei,,is ea id,43,1
+Akk. SG,eum eam id,,is ea id,35,10
+Abl. SG,eo ea eo,,is ea id,31,2
+Nom PL,ii/ei eae ea,,is ea id,24,4
+Gen PL,eorum earum eorum,,is ea id,19,5
+Dat. PL,iis/eis iis/eis iis/eis,,is ea id,16,2
+Akk. PL,eos eas ea,,is ea id,7,7
+ABl. PL,iis/eis iis/eis iis/eis,,is ea id,8,0
+m,us i o um o i orum is as is,,Deklinationen,40,4
+f,a ae ae am a ae arum is as is,,Deklinationen,31,12
+n,um i o um o a orum is a is,,Deklinationen,37,6
+kons m/f,homo is i em e es um ibus es ibus,,Deklinationen,28,10
+kons n,us is i us e era um ibus era ibus,,Deklinationen,23,15
+Alliteration,Wiederholung des gleichen Buchstaben,,Rethorische Mittel,2,3
+Anapher,Gleiches Wort am anfang des Satzes,,Rethorische Mittel,1,1
+Asyndeton,Aufreihung ohne zwischen wort,,Rethorische Mittel,3,1
+polisyndeton,Aufreihung mit zwischen wort,,Rethorische Mittel,2,1
+Metapher,andere bedeutung für ein wort,,Rethorische Mittel,2,1
+filius,der Sohn,i m,9,32,1
+pellere,stoßen schlagen vertreiben,pello pepuli pulsum,9,25,21
+mora,der Aufschub die Verzögerung,ae f,9,28,9
+petere,aufsuchen sich begeben verlangen erbitten angreifen,peto petivi petitum,9,23,22
+dicere,sagen sprechen nennen,dico dixi dictum,9,32,1
+litus,die Küste der Strand,litoris n,9,19,3
+agere,treiben tun handeln verhandeln,ago egi actum,9,24,3
+iubere,befehlen,iubeo iussi iussum,9,22,1
+tenere,halten haben,,9,24,2
+placere,gefallen,,9,18,4
+dare,geben,do dedi datum,9,20,0
+inquit,"sagte er, sie es",,9,13,6
+celer,schnell,celeris celere,9,13,7
+terra,die Erde das land,ae f,9,14,7
+qui,der die das welcher welche welches,quae quod,9,16,3
+ibi,dort,,9,15,2
+bos,das Rind,bovis m/f,9,13,3
+rex,der könig,regis m,9,13,4
+pater,der vater,patris m,9,13,3
+mons,der Berg,montis m,9,15,1
+virgo,die Frau,virginis f,9,15,2
+bene,gut,,9,14,2
+convenire,zusammenkommen jemanden treffen sich einigen,venio veni ventum,9,9,11
+amor,die Liebe,amoris m,9,10,7
+ponere,stellen liegen,pono posui positum,9,5,11
+de-ponere,ab/weglegen,pono posui positum,9,14,6
+orbis,der Kreis,is m,9,17,5
+orbis terrarum,der Erdkreis,,9,17,4
+dexter,rechts glücklich,dextra dextrum,9,14,7
+dextra,die rechte hand,ae f,9,12,12
+ignis,das Feuer,is m,9,26,6
+inter,zwischen unter während,,9,17,5
+miscere,mischen,misceo miscui mixtum,9,18,5
+herba,das Gras,ae f,9,7,4
+gaudere,sich über etw freuen,abl,9,17,5
+stare,stehen,sto steti statum,9,17,2
+color,die Farbe,coloris m,9,13,5
+fortis,stark tapfer,is e,9,21,7
+puella,das Mädchen,ae f,9,17,2
+manus,die Hand die Gruppe,us f,9,14,14
+modo,nur gerade eben,,9,20,16
+modo modo,bald bald mal mal,,9,23,4
+audere,wagen,,9,30,7
+pes,der Fuß,pedis m,9,24,2
+unda,die Welle,ae f,9,18,8
+ab-ire,weg gehen,,9,0,0

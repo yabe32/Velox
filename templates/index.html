@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Velox · Latein lernen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#lernen" aria-label="Velox Startseite">
+        <span class="brand-mark">V</span>
+        <span><strong>Velox</strong><small>Latein im Fluss</small></span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <button class="nav-button active" data-view="learn">Lernen <kbd>1</kbd></button>
+        <button class="nav-button" data-view="vocabulary">Vokabeln <kbd>2</kbd></button>
+        <button class="nav-button" data-view="data">Daten <kbd>3</kbd></button>
+      </nav>
+      <div class="top-actions">
+        <span class="connection-dot" title="Lokal gespeichert"></span>
+        <span class="desktop-label">Bereit</span>
+        <button id="logout-button" class="text-button hidden">Abmelden</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="view-learn" class="view active">
+        <div id="setup-screen" class="setup-layout">
+          <aside class="selection-panel panel">
+            <div class="panel-heading">
+              <div><span class="eyebrow">01 · Auswahl</span><h2>Lernstoff</h2></div>
+              <button id="select-all-lessons" class="text-button">Alle wählen</button>
+            </div>
+            <label class="field-label" for="source-select">Datenquelle</label>
+            <select id="source-select" multiple aria-describedby="source-hint"></select>
+            <small id="source-hint" class="hint">Strg/Cmd halten, um mehrere Quellen zu wählen.</small>
+            <div class="field-label row-label"><span>Lektionen</span><span id="selection-count">0 Vokabeln</span></div>
+            <div id="lesson-list" class="check-list"></div>
+            <details id="advanced-selection" class="advanced-selection">
+              <summary>Weitere Auswahl <span>Schwierigkeit, Lernlisten, einzelne Wörter</span></summary>
+              <div class="advanced-selection-content">
+                <div class="field-label">Schwierigkeit <span class="optional-label">optional</span></div>
+                <div id="difficulty-picker" class="difficulty-picker">
+                  <label><input type="checkbox" value="leicht"><span>Leicht</span></label>
+                  <label><input type="checkbox" value="eher leicht"><span>Eher leicht</span></label>
+                  <label><input type="checkbox" value="mittel"><span>Mittel</span></label>
+                  <label><input type="checkbox" value="schwierig"><span>Schwierig</span></label>
+                  <label><input type="checkbox" value="sehr schwierig"><span>Sehr schwierig</span></label>
+                </div>
+                <label class="field-label" for="study-list-select">Gespeicherte Lernliste <span class="optional-label">optional</span></label>
+                <select id="study-list-select"><option value="">Keine Lernliste</option></select>
+                <button id="targeted-toggle" class="secondary-button full">Gezielt einzelne Vokabeln wählen</button>
+                <div id="targeted-summary" class="targeted-summary hidden"></div>
+              </div>
+            </details>
+          </aside>
+
+          <div class="setup-main">
+            <div class="hero-copy">
+              <span class="eyebrow">Schneller lernen. Sicher erinnern.</span>
+              <h1>Was trainieren wir<br><em>heute?</em></h1>
+              <p>Wähle deinen Modus. Im Training reicht die Tastatur: antworten, Enter, weiter.</p>
+            </div>
+
+            <div class="mode-grid" role="radiogroup" aria-label="Lernmodus">
+              <button class="mode-card selected" data-mode="block" role="radio" aria-checked="true">
+                <span class="mode-index">A</span>
+                <span class="mode-icon">▦</span>
+                <span><strong>Blockmodus</strong><small>Feste Gruppen, viele schnelle Wiederholungen</small></span>
+                <span class="radio-mark"></span>
+              </button>
+              <button class="mode-card" data-mode="cards" role="radio" aria-checked="false">
+                <span class="mode-index">B</span>
+                <span class="mode-icon">▱</span>
+                <span><strong>Karteikasten</strong><small>Fünf Boxen bis jede Vokabel sitzt</small></span>
+                <span class="radio-mark"></span>
+              </button>
+              <button class="mode-card" data-mode="through" role="radio" aria-checked="false">
+                <span class="mode-index">C</span>
+                <span class="mode-icon">↔</span>
+                <span><strong>Durchlauf</strong><small>Latein und Lösung ohne Tippen durchgehen</small></span>
+                <span class="radio-mark"></span>
+              </button>
+            </div>
+
+            <div class="configuration panel">
+              <div class="panel-heading compact">
+                <div><span class="eyebrow">02 · Umfang</span><h2 id="config-title">Blöcke konfigurieren</h2></div>
+                <span id="question-total" class="total-pill">0 Abfragen</span>
+              </div>
+              <div id="block-config" class="config-grid">
+                <label>Blockgröße<input id="block-size" type="number" min="1" max="200" value="5"><small>Vokabeln pro Block</small></label>
+                <label>Wiederholungen<input id="repetitions" type="number" min="1" max="30" value="5"><small>Je Vokabel</small></label>
+                <div class="block-picker-field">
+                  <div class="block-picker-heading"><span>Blöcke auswählen</span><button id="select-all-blocks" class="text-button" type="button">Alle</button></div>
+                  <div id="block-picker" class="block-picker"><span class="hint">Zuerst Lektionen wählen</span></div>
+                  <small>Nur markierte Blöcke werden abgefragt</small>
+                </div>
+              </div>
+              <div id="cards-config" class="config-grid one hidden">
+                <label>Anzahl Vokabeln<input id="card-count" type="number" min="1" max="1000" value="20"><small>Alle starten in Box 1</small></label>
+              </div>
+              <div id="through-config" class="through-config hidden">
+                <label class="switch-row compact-switch">
+                  <span><strong>Automatisch weiter</strong><small>Sonst wechselst du mit Enter</small></span>
+                  <input id="timer-toggle" type="checkbox"><i></i>
+                </label>
+                <label id="timer-seconds-label" class="hidden">Sekunden pro Seite<input id="timer-seconds" type="number" min="1" max="60" value="2"></label>
+              </div>
+              <label id="declension-setting" class="switch-row">
+                <span><strong>Deklination mit abfragen</strong><small>Übersetzung und Deklination direkt hintereinander eingeben</small></span>
+                <input id="declension-toggle" type="checkbox"><i></i>
+              </label>
+              <label id="typo-setting" class="switch-row">
+                <span><strong>Kleine Tippfehler erlauben</strong><small>Ein kleiner Tippfehler in längeren Übersetzungen zählt trotzdem als richtig</small></span>
+                <input id="typo-toggle" type="checkbox"><i></i>
+              </label>
+            </div>
+
+            <div class="selection-preview panel">
+              <div class="panel-heading compact">
+                <div><span class="eyebrow">03 · Vorschau</span><h2>Ausgewählte Wörter</h2></div>
+                <span id="preview-count" class="total-pill">0 ausgewählt</span>
+              </div>
+              <p id="preview-note" class="selection-preview-note">Wähle links mindestens eine Lektion aus.</p>
+              <div id="selected-preview" class="preview-content">
+                <div class="preview-empty">Noch keine Vokabeln ausgewählt.</div>
+              </div>
+            </div>
+
+            <div class="start-row">
+              <p><kbd>Enter</kbd> startet · Im Training bleibt der Fokus im Antwortfeld.</p>
+              <button id="start-quiz" class="primary-button">Training starten <span>→</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="quiz-screen" class="quiz-screen hidden">
+          <div class="quiz-topline">
+            <button id="quit-quiz" class="text-button">← Auswahl</button>
+            <div id="quiz-mode-label" class="eyebrow">Blockmodus</div>
+            <div id="quiz-progress-label">0 / 0</div>
+          </div>
+          <div class="progress-track"><div id="quiz-progress"></div></div>
+          <div id="box-strip" class="box-strip hidden"></div>
+          <div class="quiz-stage">
+            <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
+            <div class="prompt-card">
+              <span id="quiz-lesson" class="lesson-badge"></span>
+              <p class="prompt-label">Übersetze</p>
+              <h2 id="quiz-word">—</h2>
+              <form id="answer-form" autocomplete="off">
+                <label class="sr-only" for="answer-input">Deutsche Übersetzung</label>
+                <input id="answer-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Deutsche Übersetzung …">
+                <button type="submit" aria-label="Antwort absenden">↵</button>
+              </form>
+              <p class="keyboard-help"><kbd>Enter</kbd> Antwort prüfen</p>
+              <button id="mark-correct-button" class="secondary-button mark-correct hidden" type="button">Doch als richtig werten</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="summary-screen" class="summary-screen hidden">
+          <span class="summary-mark">✓</span>
+          <span class="eyebrow">Training beendet</span>
+          <h1>Starker Durchlauf.</h1>
+          <div class="summary-stats">
+            <div><strong id="summary-answered">0</strong><span>Abfragen</span></div>
+            <div id="summary-rate-stat"><strong id="summary-rate">0%</strong><span>Richtig</span></div>
+            <div id="summary-wrong-stat"><strong id="summary-wrong">0</strong><span>Fehler</span></div>
+          </div>
+          <div id="summary-details" class="summary-details hidden">
+            <h2>Noch unsichere Wörter</h2>
+            <div id="summary-mistakes"></div>
+            <div class="mistake-save">
+              <select id="mistake-list-target"><option value="new">Neue Lernliste</option></select>
+              <input id="mistake-list-name" type="text" placeholder="Name, z. B. Klausur Freitag">
+              <button id="save-mistakes" class="secondary-button">In Lernliste speichern</button>
+            </div>
+          </div>
+          <button id="restart-setup" class="primary-button">Neues Training</button>
+        </div>
+      </section>
+
+      <section id="view-vocabulary" class="view">
+        <div class="page-heading">
+          <div><span class="eyebrow">Bibliothek</span><h1>Vokabeln</h1><p>Bearbeiten, löschen, sortieren oder gezielt fürs nächste Training markieren.</p></div>
+          <button id="add-word" class="primary-button">+ Vokabel hinzufügen</button>
+        </div>
+        <div class="toolbar panel">
+          <input id="vocab-search" type="search" placeholder="Latein, Deutsch oder Form suchen …">
+          <select id="vocab-source-filter"><option value="">Alle Datenquellen</option></select>
+          <select id="difficulty-filter">
+            <option value="">Alle Schwierigkeiten</option>
+            <option>leicht</option><option>eher leicht</option><option>mittel</option><option>schwierig</option><option>sehr schwierig</option>
+          </select>
+          <select id="vocab-sort">
+            <option value="position">Reihenfolge der CSV</option>
+            <option value="hard-first">Schwierige zuerst</option>
+            <option value="easy-first">Leichte zuerst</option>
+            <option value="alphabetical">Alphabetisch</option>
+          </select>
+          <span id="vocab-result-count"></span>
+        </div>
+        <div class="table-wrap panel">
+          <table>
+            <thead><tr><th><input id="select-visible" type="checkbox" aria-label="Alle sichtbaren wählen"></th><th>Latein</th><th>Deutsch</th><th>Formen</th><th>Lektion</th><th>Schwierigkeit</th><th></th></tr></thead>
+            <tbody id="vocab-table"></tbody>
+          </table>
+          <div id="empty-vocabulary" class="empty-state hidden">Keine passenden Vokabeln gefunden.</div>
+        </div>
+        <div id="selection-dock" class="selection-dock hidden"><strong id="dock-count">0 ausgewählt</strong><span>Diese Auswahl steht im Lernbereich bereit.</span><button id="learn-selection" class="primary-button">Auswahl lernen</button><button id="clear-selection" class="text-button">Aufheben</button></div>
+      </section>
+
+      <section id="view-data" class="view">
+        <div class="page-heading">
+          <div><span class="eyebrow">Datenverwaltung</span><h1>Import & Quellen</h1><p>CSV-Dateien bleiben getrennte Datenquellen und können jederzeit exportiert werden.</p></div>
+          <button id="open-bulk-entry" class="primary-button">Mehrere Vokabeln eintragen</button>
+        </div>
+        <div id="data-import-grid" class="data-grid">
+          <div class="panel import-card">
+            <span class="card-icon">CSV</span><h2>CSV importieren</h2>
+            <p>Unterstützt Komma, Semikolon und Tab. Pflichtspalten: <code>fremdsprache</code> und <code>deutsch</code>.</p>
+            <form id="csv-import-form">
+              <label>Name der Datenquelle<input name="name" placeholder="z. B. Lektionen 10–15"></label>
+              <label class="file-drop">CSV auswählen<input name="file" type="file" accept=".csv,text/csv" required><span>Datei hier wählen</span></label>
+              <button class="primary-button" type="submit">CSV importieren</button>
+            </form>
+          </div>
+          <div class="panel import-card ai-card">
+            <span class="card-icon">AI</span><h2>Aus Bildern erkennen</h2>
+            <p>Fotos werden ausgelesen. Vor dem Speichern erscheint immer eine bearbeitbare Prüfliste.</p>
+            <form id="ai-import-form">
+              <label>Standardlektion<input name="lesson" placeholder="z. B. 12"></label>
+              <label class="file-drop">Bilder auswählen<input name="images" type="file" accept="image/*" multiple required><span>Bis zu 8 Bilder</span></label>
+              <button id="ai-extract-button" class="primary-button" type="submit">Vokabeln erkennen</button>
+              <small id="ai-status" class="hint"></small>
+            </form>
+          </div>
+        </div>
+        <div class="panel sources-card">
+          <div class="panel-heading"><div><span class="eyebrow">Aktive Sammlungen</span><h2>Datenquellen</h2></div></div>
+          <div id="source-cards" class="source-cards"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="word-dialog">
+    <form id="word-form" method="dialog">
+      <div class="dialog-heading"><div><span class="eyebrow">Eintrag</span><h2 id="word-dialog-title">Vokabel hinzufügen</h2></div><button id="close-word-dialog" class="icon-button" type="button" aria-label="Schließen">×</button></div>
+      <input id="word-id" type="hidden">
+      <label>Datenquelle<select id="word-source" required></select></label>
+      <div class="dialog-grid"><label>Latein<input id="word-foreign" required autofocus></label><label>Deutsch<input id="word-german" required></label></div>
+      <div class="dialog-grid"><label>Deklination / Formen<input id="word-declension"></label><label>Lektion<input id="word-lesson"></label></div>
+      <div class="dialog-actions"><button id="cancel-word-dialog" class="secondary-button" type="button">Abbrechen</button><button id="save-word" class="primary-button" type="submit" value="default">Speichern</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="target-dialog" class="wide-dialog">
+    <div class="dialog-heading"><div><span class="eyebrow">Gezielte Auswahl</span><h2>Einzelne Vokabeln wählen</h2></div><button id="close-target-dialog" class="icon-button">×</button></div>
+    <input id="target-search" type="search" placeholder="Vokabel suchen …">
+    <div id="target-list" class="target-list"></div>
+    <div class="dialog-actions"><span id="target-count">0 ausgewählt</span><button id="apply-targets" class="primary-button">Auswahl übernehmen</button></div>
+  </dialog>
+
+  <dialog id="ai-review-dialog" class="wide-dialog review-dialog">
+    <div class="dialog-heading"><div><span class="eyebrow">Pflichtprüfung vor Import</span><h2>KI-Ergebnis kontrollieren</h2></div><button id="close-ai-review" class="icon-button">×</button></div>
+    <p>Fehler direkt in den Feldern korrigieren. Leere oder entfernte Zeilen werden nicht importiert.</p>
+    <div id="ai-review-list" class="ai-review-list"></div>
+    <div class="review-destination">
+      <label>Ziel<select id="ai-destination"><option value="new">Neue Datenquelle</option></select></label>
+      <label id="ai-source-name-label">Name<input id="ai-source-name" value="KI-Import"></label>
+    </div>
+    <div class="dialog-actions"><button id="add-review-row" class="secondary-button">+ Zeile</button><span id="review-count"></span><button id="commit-ai" class="primary-button">Geprüfte Vokabeln importieren</button></div>
+  </dialog>
+
+  <dialog id="bulk-dialog" class="wide-dialog review-dialog">
+    <div class="dialog-heading"><div><span class="eyebrow">Schnelleingabe</span><h2>Mehrere Vokabeln eintragen</h2></div><button id="close-bulk-dialog" class="icon-button">×</button></div>
+    <div class="review-destination"><label>Datenquelle<select id="bulk-source"></select></label><span class="hint">Mit Tab wechselst du schnell ins nächste Feld.</span></div>
+    <div id="bulk-list" class="ai-review-list"></div>
+    <div class="dialog-actions"><button id="add-bulk-row" class="secondary-button">+ Zeile</button><span id="bulk-count"></span><button id="save-bulk" class="primary-button">Alle speichern</button></div>
+  </dialog>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+</body>
+</html>
